@@ -13,6 +13,8 @@ print("Loading dataset...")
 try:
     dataset=pd.read_csv('dataset1.csv')
     print("✅ Dataset loaded successfully!")
+    print("Loaded columns:", dataset.columns.tolist())
+    print(dataset.head())
 except FileNotFoundError:
     print("❌ Dataset file not found. Check the path and file name.")
     dataset = None
@@ -45,7 +47,7 @@ class Recipe(BaseModel):
     CookTime:int
     PrepTime:int
     TotalTime:int
-    RecipeIngredientParts: Optional[list[str]]
+    RecipeIngredientParts:list[str]
     Calories:float
     FatContent:float
     SaturatedFatContent:float
