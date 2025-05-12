@@ -45,7 +45,7 @@ class Recipe(BaseModel):
     CookTime:int
     PrepTime:int
     TotalTime:int
-    RecipeIngredientParts:list[str]
+    RecipeIngredientParts: Optional[list[str]]
     Calories:float
     FatContent:float
     SaturatedFatContent:float
