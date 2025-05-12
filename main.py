@@ -11,7 +11,7 @@ import pandas as pd
 print("Loading dataset...")
 
 try:
-    dataset=pd.read_csv('dataset.csv' , compression='gzip',encoding='ISO-8859-1')
+    dataset=pd.read_csv('dataset1.csv' , compression='gzip',encoding='ISO-8859-1')
     print("✅ Dataset loaded successfully!")
 except FileNotFoundError:
     print("❌ Dataset file not found. Check the path and file name.")
