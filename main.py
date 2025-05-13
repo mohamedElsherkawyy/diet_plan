@@ -11,7 +11,7 @@ import pandas as pd
 print("Loading dataset...")
 
 try:
-    dataset=pd.read_csv('dataset2.csv')
+    dataset=pd.read_csv('dataset.csv')
     print("✅ Dataset loaded successfully!")
     print("Loaded columns:", dataset.columns.tolist())
     print(dataset.head())
